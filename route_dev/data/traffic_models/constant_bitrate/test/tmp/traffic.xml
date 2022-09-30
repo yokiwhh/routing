@@ -1,0 +1,21 @@
+<root>
+    <traffic_list>
+        <traffic>
+            <src>*</src>
+            <dst>*</dst>
+            <flow>
+		<time_distribution>
+                    <deterministic/>
+                </time_distribution>
+                <size_distribution>
+			<binomial>
+				<pkt_size_1>300</pkt_size_1>
+				<pkt_size_2>1700</pkt_size_2>
+			</binomial>
+                </size_distribution>
+                <factor>1</factor>
+                <ToS>0</ToS>
+            </flow>
+        </traffic>
+    </traffic_list>
+</root>
